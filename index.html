@@ -24,8 +24,8 @@ z-index:-1;
 
 @keyframes mymove
 {
-from {left:0px;}
-to {left:200px;}
+from {transform:rotate(0deg);}
+to {transform:rotate(360deg);}
 }
 
 @-webkit-keyframes mymove /*Safari and Chrome*/
@@ -225,7 +225,7 @@ function drawRouletteWheel() {
     <img src="images/1.png" id="shan-img" style="display:none;" />
     <img src="images/2.png" id="sorry-img" style="display:none;" />
 	<div class="banner">
-		<div class="turnplate" style="background-image:url(images/turnplate-bg.png);background-size:100% 100%;">
+		<div class="turnplate">
 			<img src="images/turnplate-bg.png" class="anim" />
 			<canvas class="item" id="wheelcanvas" width="422px" height="422px"></canvas>
 			<img class="pointer" src="images/turnplate-pointer.png"/>
